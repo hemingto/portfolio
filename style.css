@@ -1,0 +1,41 @@
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.window {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.window:nth-child(1) {
+  background: #d5d7dd;
+  top: 0%;
+}
+.window:nth-child(2) {
+  background: #1babb7;
+  top: 100%;
+}
+
+.window:nth-child(3) {
+  background: #6ab29f;
+  top: 200%;
+}
+
+.window:nth-child(4) {
+  background: #333a3e;
+  top: 300%;
+}
+
+.window:nth-child(5) {
+  background: #d0482b;
+  top: 400%;
+}
+
+.window:nth-child(6) {
+  background: #231f20;
+  top: 500%;
+}
