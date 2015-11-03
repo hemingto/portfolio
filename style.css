@@ -1,4 +1,5 @@
 
+/*<===========global===========>*/
 
 html, body {
   margin: 0;
@@ -12,7 +13,7 @@ html, body {
 }
 
 .window:nth-child(1) {
-  background: #d5d7dd;
+  background: #ffffff;
   top: 0%;
 }
 .window:nth-child(2) {
@@ -40,9 +41,122 @@ html, body {
   top: 500%;
 }
 
+ul, li {
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+h1, h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+
+/*<=========== first panel ==============>*/
+
+.nav, .name, #picture, #half {
+  display: inline-block;
+  vertical-align: top;
+  position:relative;
+}
+
+#half {
+  width:40%;
+  height:100%;
+}
+
+.nav {
+  width: 100%;
+  height:80%;
+/*  background-color:purple;*/
+}
+
+.nav ul {
+  margin: 40px 0px 0px 10%;
+  padding-left:0px;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin-right:15px;
+  padding:5px; 
+}
+
+.name {
+  width:100%;
+  height:20%;
+  /*background-color: #333a40;*/
+}
+
+.name h1, .name h2 {
+  margin:0px;
+  margin-left:10%;
+}
+
+.name h1 {
+  top:-20;
+}
+
+.name h2 {
+}
+
+#picture {
+  width:60%;
+  height: 100%;
+  margin-left:-4px;
+  position:relative;
+ /* background-color:orange;*/
+/*  background-image: url("images/dummy-img.jpg");
+  background-repeat:no-repeat;
+  background-position: center center;*/
+    background: url("images/yosemite.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#picture img {
+  width:517.6px;
+  height:517.6px;
+  position:absolute;
+  bottom:0;
+  margin-left:10%;
+  margin-bottom: 10%
+}
+
+/*<===========fifth_panel===============>*/
+
+.fifth_panel a {
+  margin:0px;
+  padding:0px;
+  position:relative;
+}
+
 #resume {
   width:954px;
   height:806px;
-  margin-top:120px;
+  display:inline-block;
+  position:absolute;
+  bottom:0;
+  margin-left:5%;
+
+}
+
+@media (max-width: 1000px) {
+  
+  #resume {
+    width: 572px;
+    height:484px;
+    margin-left:0;
+
+  }
 
 }
