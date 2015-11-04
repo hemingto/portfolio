@@ -75,7 +75,7 @@ h2 {
 .nav {
   width: 100%;
   height:80%;
-/*  background-color:purple;*/
+  background-color:purple;
 }
 
 .nav ul {
@@ -92,7 +92,7 @@ h2 {
 .name {
   width:100%;
   height:20%;
-  /*background-color: #333a40;*/
+  background-color: #333a40;
 }
 
 .name h1, .name h2 {
@@ -101,7 +101,6 @@ h2 {
 }
 
 .name h1 {
-  top:-20;
 }
 
 .name h2 {
@@ -112,15 +111,15 @@ h2 {
   height: 100%;
   margin-left:-4px;
   position:relative;
- /* background-color:orange;*/
+  background-color:orange;
 /*  background-image: url("images/dummy-img.jpg");
   background-repeat:no-repeat;
   background-position: center center;*/
-    background: url("images/yosemite.jpg") no-repeat center center; 
+/*    background: url("images/yosemite.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 #picture img {
@@ -146,16 +145,42 @@ h2 {
   display:inline-block;
   position:absolute;
   bottom:0;
-  margin-left:5%;
+}
+
+@media (max-width: 1000px) {
+  
+  #resume {
+    width: 715.5px;
+    height:605px;
+    margin-left:0px;
+  }
 
 }
 
 @media (max-width: 1000px) {
   
   #resume {
-    width: 572px;
+    width: 715.5px;
+    height:605px;
+    margin-left:0px;
+  }
+
+}
+
+
+@media (max-height:800px) {
+
+  #resume {
+    width: 715.5px;
+    height:605px;
+  }
+}
+
+@media (max-height:600px) {
+
+  #resume {
+    width: 572.4px;
     height:484px;
-    margin-left:0;
 
   }
 
