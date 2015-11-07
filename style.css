@@ -1,6 +1,8 @@
 
 /*<===========global===========>*/
 
+* { box-sizing: border-box; }
+
 ul, li, h1, h2, p, a {
   font-family:'Muli', Arial, Helvetica, sans-serif;
   color:#333a40;
@@ -20,7 +22,14 @@ h2 {
   font-weight: 400;
 }
 
-/*<===========universal===========>*/
+@media (max-width:780px) {
+  p {
+  font-size:.8em;
+}
+
+}
+
+/*<===========shared===========>*/
 
 #container {
   max-width:1400px;
@@ -29,13 +38,12 @@ h2 {
   margin-right: auto;
 }
 
-#resume, #about {
+#about, #work, #resume {
   margin-top:20%;
 }
 
-#resume_text, #download_text, #about_text {
-  display: inline-block;
-  margin: 3% 0px;
+.column img {
+  width:100%;
 }
 
 /*<===========home===========>*/
@@ -116,17 +124,86 @@ h2 {
   height:600px;
 }
 
-/*<===========bio===========>*/
+/*<===========about===========>*/
+
+#about {
+  overflow: auto;
+}
+
+.row {
+  clear:both;
+}
+
+.column {
+  float:left;
+}
+
+.two {
+  width:50%;
+}
+
+#right_brain_text {
+  text-align: right;
+}
 
 #brain {
-  width: 50%;
-  height:250px;
-  background-color: #f6f6f6;
-  margin: 0 auto;
+  margin-top:10px;
+}
+
+#brain img {
+  float:left;
+  width:50%;
+  padding:5px;
+  transition: opacity 0.5s ease;
+}
+
+#brain img:hover {
+  opacity: 0.7;
+}
+
+#left_brain, #right_brain {
+  cursor: pointer;
+}
+
+/*<===========work===========>*/
+
+#work {
+   overflow: auto;
+}
+
+.three {
+  width:33.3333%;
+  padding:10px;
+}
+
+#work p {
+  max-width: 750px
+}
+
+.relative {
+  position: relative
+}
+
+.blue_overlay {
+  background-color:#333a40;
+  opacity: .1;
+  position: absolute;
+  z-index: 999;
+  width:100%;
 }
 
 
+
+
 /*<===========resume===========>*/
+
+#resume_text{
+  display: inline-block;
+}
+
+#resume_text, #download_text {
+  margin: 3% 0px;
+}
 
 #download_text, #download_button {
   float: right;
@@ -150,3 +227,12 @@ h2 {
   cursor: pointer;
   margin: 3% 0px;
 }
+
+#download_text:hover {
+  font-weight: 600;
+}
+
+.font-weight {
+  font-weight: 600;
+}
+
