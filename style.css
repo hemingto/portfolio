@@ -49,7 +49,7 @@ h2 {
 /*<===========home===========>*/
 
 #home {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #home img, #home li {
@@ -142,22 +142,31 @@ h2 {
   width:50%;
 }
 
+#left_brain_text {
+  padding-right:40px;
+  transition-timing-function: ease;
+}
+
 #right_brain_text {
   text-align: right;
+  transition-timing-function: ease;
 }
 
 #brain {
   margin-top:10px;
+  padding-right:40px;
 }
 
 #brain img {
   float:left;
   width:50%;
-  padding:5px;
-  transition: opacity 0.5s ease;
 }
 
-#brain img:hover {
+#right_brain:hover {
+  opacity: 0.7;
+}
+
+#left_brain:hover {
   opacity: 0.7;
 }
 
@@ -171,26 +180,55 @@ h2 {
    overflow: auto;
 }
 
+#work_text {
+  display:inline-block;
+}
+
+#behance {
+  float: right;
+  width: 35px;
+  height:35px;
+  margin:18px 0px;
+}
+
 .three {
   width:33.3333%;
   padding:10px;
+}
+
+.six {
+  width:50%;
+  margin-top: 5%;
+
+}
+
+.twelve {
+  width:100%;
 }
 
 #work p {
   max-width: 750px
 }
 
-.relative {
-  position: relative
+.work_img {
+  box-shadow: -5px 5px 18px -5px rgba(0,0,0,0.1);
+  border-radius: 100%;
+  width:50% !important;
 }
 
-.blue_overlay {
-  background-color:#333a40;
-  opacity: .1;
-  position: absolute;
-  z-index: 999;
-  width:100%;
+.clear {
+  float: left;
 }
+
+.six p {
+  margin-top:10%;
+}
+
+.top {
+  margin-top:10%;
+}
+
+
 
 
 
@@ -236,3 +274,8 @@ h2 {
   font-weight: 600;
 }
 
+#footer {
+  margin-top:5%;
+  text-align: center;
+  opacity: .5;
+}
