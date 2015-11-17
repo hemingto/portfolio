@@ -50,6 +50,10 @@ h2 {
   cursor: pointer;
 }
 
+#nav_about, #nav_work, #nav_resume {
+  cursor: pointer;
+}
+
 /*<===========home===========>*/
 
 #home {
@@ -282,4 +286,13 @@ h2 {
   margin-top:5%;
   text-align: center;
   opacity: .5;
+}
+
+#footer p {
+ /* display: inline-block;*/
+}
+
+#top_text {
+  font-weight: 600;
+  cursor: pointer;
 }
