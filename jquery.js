@@ -20,11 +20,4 @@ $("#download_button").hover(function() {
 	$("#download_text").toggleClass("font-weight");
 });
 
-var work_img_height = $(".work_img").css("height");
-
-console.log(work_img_height);
-
-$(".blue_overlay").css("height", work_img_height);
-
 });
-
