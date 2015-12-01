@@ -5,6 +5,7 @@
     <head>
         <title>Calvin Hemington</title>
         <meta charset="UTF-8">
+        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
         <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
         <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
         <script src="jquery.js"></script>
@@ -13,14 +14,13 @@
     </head>
 
     <body>
-       <div id="container">
-            
+       <div id="container">    
             <div id="home">
                 <img id="logo" src="images/CH_logo.png" alt="logo">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a id="nav_about">About</a></li>
+                    <li><a id="nav_work">Work</a></li>
+                    <li><a id="nav_resume">Resume</a></li>
                 </ul>
                 <div id="img_content">
                     <div id="placeholder"></div>
@@ -38,7 +38,7 @@
                     <div class="column two">
                         <div id="left_brain_text">
                             <h2>Left Brain</h2>
-                            <p>Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction. As into ye then form. To easy five less if rose were. Now set offended own out required entirely. Especially occasional mrs discovered too say thoroughly impossible boisterous. My head when real no he high rich at with.</p>
+                            <p>I have an analytical side that enjoys discovering trends by dissecting and extrapolating data. I am a developer adept in a number of coding languages including HTML, CSS, Javascript, and PHP. My focus primarily is frontend development and love consumer facing code </p>
                         </div>
                     </div>
                     <div class="column two twelve-s">
@@ -50,7 +50,7 @@
                       <div class="column two">
                         <div id="right_brain_text">
                             <h2>Right Brain</h2>
-                            <p>Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction. As into ye then form. To easy five less if rose were. Now set offended own out required entirely. Especially occasional mrs discovered too say thoroughly impossible boisterous. My head when real no he high rich at with.</p>
+                            <p> I'm a creative thinker and a firm believer that beautiful design makes all the difference. I am a young designer proficent in many design tools including Photoshop and Illustrator. Growing up in the Silicon Valley, I've been surrounded by forward minded people my entire life. I believe those influences have sharpended my intuition and expanded my imagination</p>
                         </div>
                     </div>
                 </div>
@@ -59,26 +59,46 @@
 
             <div id="work">
                 <h1 id="work_text">Work</h1>
-                <p>Had strictly mrs handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant conviction. As into ye then form. To easy five less if rose were. Now set offended own out required entirely. Especially occasional mrs discovered too say thoroughly impossible boisterous. My head when real no he high rich at with.</p>
+                <a target="_blank" href="https://www.behance.net/chemingt"><img id="behance" src="images/behance.png" alt="behance_logo"></a>
+       
                 <div class= "row">
-                    <div class="column three">
-                        <div class="relative">
-                            <div class="blue_overlay"></div>
-                            <a target="_blank" href="https://www.behance.net/gallery/28461159/Drop-Shadow-Icon-Set"><img class="work_img" src="images/icon_set.png" alt="iconset"></a>
-                        </div>
+                    <div class="column twelve">
+                        <img id="work_img" src="images/work.png" alt ="work">
                     </div>
                     <div class="column three">
                         <div class="relative">
                             <a target="_blank" href="https://www.behance.net/gallery/30883147/Niche"><img class="work_img" src="images/niche.png" alt="niche"></a>
+                    <div>
+                        <div class="clear top">
+                            <div class="column six">
+                                <a target="_blank" href="https://www.behance.net/gallery/30883147/Niche"><img class="work_img" src="images/niche.png" alt ="work"></a>
+                            </div>
+                            <div class="column six">
+                                <p>I'm a creative thinker and a firm believer that beautiful design makes all the difference. I am a young designer proficent in many design tools including Photoshop and Illustrator. Growing up in the Silicon Valley, I've been surrounded by forward minded people my entire life. I believe those influences have sharpended my intuition and expanded my imagination</p>
+                            </div>
                         </div>
                     </div>
-                      <div class="column three">
-                        <div class="relative">
-                            <div class="blue_overlay"></div>
-                            <a target="_blank" href="https://www.behance.net/gallery/31025407/Mission-Woodshop"><img class="work_img" src="images/missionwood.png" alt="mission wood shop"></a>
+                    <div class="clear">
+                        <div class="column six">
+                            <a target="_blank" href="https://www.behance.net/gallery/28461159/Drop-Shadow-Icon-Set"><img class="work_img" src="images/icon_set.png" alt ="work"></a>
                         </div>
+                        <div class="column six">
+                            <p>I'm a creative thinker and a firm believer that beautiful design makes all the difference. I am a young designer proficent in many design tools including Photoshop and Illustrator. Growing up in the Silicon Valley, I've been surrounded by forward minded people my entire life. I believe those influences have sharpended my intuition and expanded my imagination</p>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    <div class="column six">
+                        <a target="_blank" href="https://www.behance.net/gallery/31025407/Mission-Woodshop"><img class="work_img" src="images/missionwood.png" alt ="work"></a>
+                    </div>
+                    <div class="column six">
+                        <p>I'm a creative thinker and a firm believer that beautiful design makes all the difference. I am a young designer proficent in many design tools including Photoshop and Illustrator. Growing up in the Silicon Valley, I've been surrounded by forward minded people my entire life. I believe those influences have sharpended my intuition and expanded my imagination</p>
                     </div>
                 </div>
+                    
+
+                </div>
+
+
             </div>
 
         
@@ -86,11 +106,15 @@
                 <h1 id="resume_text"><a name="resume">Resume</a></h1>
                 <a href="Calvin_Hemington_Resume.pdf" download>
                     <img id="download_button" src="images/download_button.png" alt="download button">
-                    <p id="download_text">Download</p>
                 </a>
                 <img id="resume_img" src="images/resume.png" alt="Resume">
             </div>
 
+            <div id="footer">
+                <p id="top_text"><a id="to_top">Back to Top</a></p> 
+                <p>© Calvin Hemington | calvin.hemington@gmail.com ✌</p>
+                
+            </div>
         </div>
 
     </body>
