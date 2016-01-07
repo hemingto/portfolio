@@ -13,34 +13,46 @@ $("#right_brain").click( function() {
 
 });
 
+var about = null;
+var work = null;
+var resume = null;
 
-var about = $('#about').offset().top;
-var work = $('#work').offset().top;
-var resume = $('#resume').offset().top;
+function smooth_scroll() {
 
-$('#nav_about').click(function(){
+	about = $('#about').offset().top;
+	work = $('#work').offset().top;
+	resume = $('#resume').offset().top;
+
+	$('#nav_about').click(function(){
 	$('html, body').animate({scrollTop:about}, 'slow');
 	return false;
+	});
+
+	$('#nav_work').click(function(){
+		$('html, body').animate({scrollTop:work}, 'slow');
+		return false;
+	});
+
+	$('#nav_resume').click(function(){
+		$('html, body').animate({scrollTop:resume}, 'slow');
+		return false;
+	});
+
+
+	$('#to_top').click(function(){
+		$('html, body').animate({scrollTop:0}, 'slow');
+		return false;
+	});
+
+}
+
+smooth_scroll();
+
+$(window).resize(function() {
+
+	smooth_scroll();		
+
 });
-
-$('#nav_work').click(function(){
-	$('html, body').animate({scrollTop:work}, 'slow');
-	return false;
-});
-
-$('#nav_resume').click(function(){
-	$('html, body').animate({scrollTop:resume}, 'slow');
-	return false;
-});
-
-
-$('#to_top').click(function(){
-	$('html, body').animate({scrollTop:0}, 'slow');
-	return false;
-});
-
-
-
 
 
 
