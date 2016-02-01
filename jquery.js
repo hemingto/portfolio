@@ -13,9 +13,7 @@ $("#right_brain").click( function() {
 
 });
 
-var about = null;
-var work = null;
-var resume = null;
+
 
 function smooth_scroll() {
 
@@ -50,12 +48,13 @@ smooth_scroll();
 
 $(window).resize(function() {
 
-	smooth_scroll();		
+	var about = null;
+	var work = null;
+	var resume = null;
+
+	smooth_scroll();	
 
 });
-
-
-
 
 });
 
