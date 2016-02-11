@@ -58,6 +58,7 @@ h2 {
 
 #home {
   margin-top: 5%;
+  height:100vh;
 }
 
 #home img, #home li {
@@ -101,7 +102,7 @@ h2 {
 
 #placeholder {
   background-color: #f6f6f6;
-  height:600px;
+  height:75vh;
   margin-left:35%;
   position: relative;
 }
@@ -129,7 +130,7 @@ h2 {
   width:100%;
   margin-top:25px;
   position:relative;
-  height:600px;
+  height:75vh;
 }
 
 /*<===========about===========>*/
