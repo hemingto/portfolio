@@ -57,7 +57,8 @@ $(window).resize(function() {
 	var work = null;
 	var resume = null;
 
-	smooth_scroll();	
+	smooth_scroll();
+	console.log('YO');	
 
 });
 
