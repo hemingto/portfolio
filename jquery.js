@@ -1,4 +1,3 @@
-
 $(document).ready( function() {
 
 $("#left_brain_text").hide();
@@ -22,27 +21,23 @@ function smooth_scroll() {
 	work = $('#work').offset().top;
 	resume = $('#resume').offset().top;
 
-	$('#nav_about').click(function(){
-	$('html, body').animate({scrollTop:about}, 'slow');
-	return false;
+	$('#nav_about').unbind().click(function(){
+		$('html, body').animate({scrollTop:about}, 'slow');
+		return false;
 	});
 
-	$('#nav_work').click(function(){
+	$('#nav_work').unbind().click(function(){
 		$('html, body').animate({scrollTop:work}, 'slow');
 		return false;
 	});
 
-$('#nav_resume').click(function(){
-	$('html, body').animate({scrollTop:resume}, 'slow');
-	return false;
-});
-
-	$('#nav_resume').click(function(){
+	$('#nav_resume').unbind().click(function(){
 		$('html, body').animate({scrollTop:resume}, 'slow');
 		return false;
 	});
 
-	$('#to_top').click(function(){
+
+	$('#to_top').unbind().click(function(){
 		$('html, body').animate({scrollTop:0}, 'slow');
 		return false;
 	});
@@ -53,12 +48,7 @@ smooth_scroll();
 
 $(window).resize(function() {
 
-	var about = null;
-	var work = null;
-	var resume = null;
-
-	smooth_scroll();
-	console.log('YO');	
+	smooth_scroll();	
 
 });
 
