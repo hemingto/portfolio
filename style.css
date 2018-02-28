@@ -91,10 +91,6 @@ h2 {
   text-decoration: none;
 }
 
-#home li:hover {
-  font-weight: 600;
-}
-
 #home li {
   padding:0px 15px;
   line-height: 40px;
